@@ -4,10 +4,10 @@ body {
 
 #canvas {
   max-width: 1000px;
-  border: 3px solid red;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 nav{
@@ -46,6 +46,13 @@ nav{
 #bio-short {
   flex: 2;
   text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for small devices */
+  #bio {
+    flex-direction: column;
+  }
 }
 
 #bio-photo {
